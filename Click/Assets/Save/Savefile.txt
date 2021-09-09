@@ -1,0 +1,5 @@
+﻿{
+    "nickname": "",
+    "energy": 28,
+    "soldeierList": []
+}
