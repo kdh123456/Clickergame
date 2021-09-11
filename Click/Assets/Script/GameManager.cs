@@ -61,10 +61,10 @@ public class GameManager : MonoSingleton<GameManager>
         File.WriteAllText(SAVE_PATH + SAVE_FILENAME, json, System.Text.Encoding.UTF8);
     }
 
-    private void OnApplicationPause(bool pause) //화면이 멈출때마다
+    /*private void OnApplicationPause(bool pause) //화면이 멈출때마다
     {
         SaveToJson();
-    }
+    }*/
     private void OnApplicationQuit()
     {
         SaveToJson();
