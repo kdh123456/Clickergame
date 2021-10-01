@@ -1,0 +1,31 @@
+﻿{
+    "nickname": "칵테일",
+    "energy": 103,
+    "gold": 0,
+    "boxcount": 3,
+    "saveIndex": 0,
+    "treeList": [
+        {
+            "name": "모히또",
+            "imageNumber": 0,
+            "amount": 0,
+            "price": 150,
+            "ePs": 1
+        },
+        {
+            "name": "진토닉",
+            "imageNumber": 1,
+            "amount": 0,
+            "price": 1220,
+            "ePs": 10
+        },
+        {
+            "name": "모스크 뮬",
+            "imageNumber": 2,
+            "amount": 0,
+            "price": 1220,
+            "ePs": 10
+        }
+    ],
+    "gachaList": []
+}

@@ -7,66 +7,65 @@ public class GameManager : MonoSingleton<GameManager>
 {
     [SerializeField]
     private User user = null;
-    public User CurrentUser { get { return user; } }//유저 선언
+    [SerializeField]
+    private Transform textPool = null;
+    public Transform Pool { get { return textPool; } }
+    public User CurrentUser { get { return user; } }
 
-    private string SAVE_PATH = ""; //페스 선언
-    private readonly string SAVE_FILENAME = "/SaveFile.txt"; //세이브 파일 이름
+    public UIManager uimanager { get; private set; }
+    public RandomSelect randomSelect { get; private set; }
 
-    public UIManager uIManager { get; private set; }
+    private long mps;
+    private string Save_Path = "";
+    private readonly string Save_File = "/SaveFile.txt";
 
-    public void EarnEnergyPerSecond()
-    {
-        foreach (Soldier soldier in user.soldeierList)
-        {
-            user.energy += soldier.ePs * soldier.amount;
-        }
-        uIManager.UpdateEnergyPanel();
-    }
+    
     private void Awake()
     {
-        SAVE_PATH = Application.dataPath + "/Save";            //persistentDataPath:모바일
-        if (!Directory.Exists(SAVE_PATH))
+        Save_Path = Application.persistentDataPath + "/Save";
+        if(!Directory.Exists(Save_Path))
         {
-            Directory.CreateDirectory(SAVE_PATH);
+            Directory.CreateDirectory(Save_Path);
         }
-        LoadFromJson();
-        uIManager = GetComponent<UIManager>();
+        LoadToJson();
+        uimanager = GetComponent<UIManager>();
+        randomSelect = GetComponent<RandomSelect>();
 
-
-        InvokeRepeating("SaveToJson", 1f, 60f); //일정시간동안 함수반복
+        InvokeRepeating("SaveToJson", 1f, 60f);
         InvokeRepeating("EarnEnergyPerSecond", 0f, 1f);
-
     }
-
-    private void LoadFromJson()
+    public void EarnEnergyPerSecond()
+    {
+        foreach (Tree tree in user.treeList)
+        {
+            user.energy += tree.ePs * tree.amount;
+        }
+        uimanager.UpdateEnergyPanel();
+    }
+    private void LoadToJson()
     {
         string json = "";
-
-        if (File.Exists(SAVE_PATH + SAVE_FILENAME))
+        if (File.Exists(Save_Path + Save_File))
         {
-            json = File.ReadAllText(SAVE_PATH + SAVE_FILENAME);
+            json = File.ReadAllText(Save_Path + Save_File);
             user = JsonUtility.FromJson<User>(json);
         }
         else
         {
             SaveToJson();
-            LoadFromJson();
+            LoadToJson();
         }
     }
     private void SaveToJson()
     {
-        SAVE_PATH = Application.dataPath + "/Save";            //persistentDataPath:모바일
+        Save_Path = Application.persistentDataPath + "/Save";
         if (user == null) return;
         string json = JsonUtility.ToJson(user, true);
-        File.WriteAllText(SAVE_PATH + SAVE_FILENAME, json, System.Text.Encoding.UTF8);
+        File.WriteAllText(Save_Path + Save_File, json, System.Text.Encoding.UTF8);
     }
-
-    /*private void OnApplicationPause(bool pause) //화면이 멈출때마다
-    {
-        SaveToJson();
-    }*/
     private void OnApplicationQuit()
     {
         SaveToJson();
     }
+
 }

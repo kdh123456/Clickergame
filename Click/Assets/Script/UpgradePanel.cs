@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class UpgradePanel : MonoBehaviour
 {
     [SerializeField]
-    private Image soldierImage = null;
+    private Image treeimage = null;
 
     [SerializeField]
-    private Text soldierNameText = null;
+    private Text treeNameText = null;
 
     [SerializeField]
     private Text priceText = null;
@@ -18,39 +18,34 @@ public class UpgradePanel : MonoBehaviour
     private Text amountText = null;
 
     [SerializeField]
-    private Button purchaseButton = null;
+    private Sprite[] treeSprite = null;
 
-    private Soldier soldier = null;
+    private Tree tree = null;
 
-    public void SetValue(Soldier soldier)
+    public void SetValue(Tree tree)
     {
-        soldierNameText.text = soldier.name;
-        priceText.text = string.Format("{0} 에너지", soldier.price);
-        amountText.text = string.Format("{0}", soldier.amount);
-        this.soldier = soldier;
+        this.tree = tree;
+        UpdateUI();
+    }
+
+    public void UpdateUI()
+    {
+        treeimage.sprite = treeSprite[tree.imageNumber];
+        treeNameText.text = tree.name;
+        priceText.text = string.Format("원가 {0}", tree.price);
+        amountText.text = string.Format("숙련도 {0}", GameManager.Instance.CurrentUser.treeList[tree.imageNumber].amount);
     }
 
     public void OnClickPurchase()
     {
-        if (GameManager.Instance.CurrentUser.energy < soldier.price)
+        if (GameManager.Instance.CurrentUser.energy < tree.price)
         {
             return;
         }
-        GameManager.Instance.CurrentUser.energy -= soldier.price;
-        //for문 사용해서 찾는 방법과 find로 찾는 방법이 있다.
-        Soldier soldierInList = GameManager.Instance.CurrentUser.soldeierList.Find((x) => x == soldier);//x.Equal(soldier)이게 더 빠름 근데 왜 빠름?
-        soldierInList.amount++;
-        soldierInList.price = (long)(soldierInList.price * 1.25f);
-        amountText.text = string.Format("{0}", soldierInList.amount);
-        priceText.text = string.Format("{0} 에너지", soldierInList.price);
-        GameManager.Instance.uIManager.UpdateEnergyPanel();
-        //equals는 메서드고 메소드는 비교하고자 하는 대상의 내용자체를 비교하지만. ==연산자는 비교하고자 하는 대상의 주소값을 비교한다.
-        /*
-         * string a = "aaa"; 임의 주소500
-         * string b = a; 임의 주소500
-         * string c = new string("aaa");일때 임의주소 600
-         * 모두 똑같은 값을 가지고 있지만 주소값이 다르다
-         * 그렇기 때문에 b.equals(c)는 true이지만 b==c의 값은 false이다.
-         */
+        GameManager.Instance.CurrentUser.energy -= tree.price;
+        GameManager.Instance.CurrentUser.treeList[tree.imageNumber].amount++;
+        tree.price = (long)(tree.price * 1.25f);
+        UpdateUI();
+        GameManager.Instance.uimanager.UpdateEnergyPanel();
     }
 }
