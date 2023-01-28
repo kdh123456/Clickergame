@@ -20,9 +20,9 @@ public class UpgradePanel : MonoBehaviour
     [SerializeField]
     private Sprite[] treeSprite = null;
 
-    private Tree tree = null;
+    private CockTail tree = null;
 
-    public void SetValue(Tree tree)
+    public void SetValue(CockTail tree)
     {
         this.tree = tree;
         UpdateUI();
@@ -46,6 +46,6 @@ public class UpgradePanel : MonoBehaviour
         GameManager.Instance.CurrentUser.treeList[tree.imageNumber].amount++;
         tree.price = (long)(tree.price * 1.25f);
         UpdateUI();
-        GameManager.Instance.uimanager.UpdateEnergyPanel();
+        //GameManager.Instance.uimanager.UpdateEnergyPanel();
     }
 }

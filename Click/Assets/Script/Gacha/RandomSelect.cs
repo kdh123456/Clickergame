@@ -14,7 +14,7 @@ public class RandomSelect : MonoSingleton<RandomSelect>
     [SerializeField]
     private Button Gachabutton100;
 
-    [Header("��í ����")]
+    [Header("가챠 가격")]
     [SerializeField]
     private int Gachaprice = 10;
 

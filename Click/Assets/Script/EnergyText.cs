@@ -23,7 +23,6 @@ public class EnergyText : MonoBehaviour
     private void Despawn()
     {
         energyText.DOFade(1f, 0f);
-        energyText.transform.SetParent(GameManager.Instance.Pool);
-        energyText.gameObject.SetActive(false);
+        ObjectPool.Instance.ReturnObject(PoolObjectType.Text,this.gameObject);
     }
 }
