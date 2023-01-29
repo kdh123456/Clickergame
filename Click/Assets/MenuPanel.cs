@@ -1,4 +1,4 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
@@ -11,6 +11,8 @@ public class MenuPanel : MonoBehaviour
 
 	[SerializeField]
 	private Image _menuImage;
+
+	private Dictionary<Type, GameObject> optionObject = new Dictionary<Type, GameObject>();
 	public void OnDownButtonClick() //버튼 클릭시 내려가기 올라가기
 	{
 		if (_panelDown == false)
@@ -25,5 +27,21 @@ public class MenuPanel : MonoBehaviour
 		}
 
 		_panelDown = !_panelDown;
+	}
+
+	public void AddObject(Type type,GameObject obj)
+	{
+		optionObject.Add(type,obj);
+	}
+
+	public void MenuOpen(Type type)
+	{
+		foreach(var a in optionObject)
+		{
+			if (a.Key != type)
+				a.Value.SetActive(false);
+			else
+				a.Value.SetActive(true);
+		}
 	}
 }

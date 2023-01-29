@@ -20,32 +20,31 @@ public class UpgradePanel : MonoBehaviour
     [SerializeField]
     private Sprite[] treeSprite = null;
 
-    private CockTail tree = null;
+    private CockTail cockTail = null;
 
     public void SetValue(CockTail tree)
     {
-        this.tree = tree;
+        this.cockTail = tree;
         UpdateUI();
     }
 
     public void UpdateUI()
     {
-        treeimage.sprite = treeSprite[tree.imageNumber];
-        treeNameText.text = tree.name;
-        priceText.text = string.Format("¿ø°¡ {0}", tree.price);
-        amountText.text = string.Format("¼÷·Ãµµ {0}", GameManager.Instance.CurrentUser.treeList[tree.imageNumber].amount);
+        treeimage.sprite = treeSprite[cockTail.imageNumber];
+        treeNameText.text = cockTail.name;
+        priceText.text = string.Format("¿ø°¡ {0}", cockTail.price);
+        amountText.text = string.Format("¼÷·Ãµµ {0}", GameManager.Instance.CurrentUser.treeList[cockTail.imageNumber].amount);
     }
 
     public void OnClickPurchase()
     {
-        if (GameManager.Instance.CurrentUser.energy < tree.price)
+        if (GameManager.Instance.CurrentUser.energy < cockTail.price)
         {
             return;
         }
-        GameManager.Instance.CurrentUser.energy -= tree.price;
-        GameManager.Instance.CurrentUser.treeList[tree.imageNumber].amount++;
-        tree.price = (long)(tree.price * 1.25f);
+        GameManager.Instance.CurrentUser.energy -= cockTail.price;
+        GameManager.Instance.CurrentUser.treeList[cockTail.imageNumber].amount++;
+        cockTail.price = (long)(cockTail.price * 1.25f);
         UpdateUI();
-        //GameManager.Instance.uimanager.UpdateEnergyPanel();
     }
 }
