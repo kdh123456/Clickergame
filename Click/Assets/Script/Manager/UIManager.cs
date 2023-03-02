@@ -7,8 +7,6 @@ using DG.Tweening;
 public class UIManager : MonoBehaviour
 {
     [SerializeField]
-    private GameObject help = null;
-    [SerializeField]
     private GameObject Startsceen = null;
     [SerializeField]
     private GameObject updatesoon = null;
@@ -25,8 +23,6 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private UpgradePanel upgradePanelTemplate = null;
     [SerializeField]
-    private EnergyText energyTextTemplate = null;
-    [SerializeField]
     private GachaData gachadata = null;
     [SerializeField]
     private Image gskimage = null;
@@ -37,8 +33,6 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private GameObject cocktailbutton = null;
     [SerializeField]
-    private GameObject drawbutton = null;
-    [SerializeField]
     private GameObject illustratedbookbutton = null;
     [SerializeField]
     private GameObject goldscreen = null;
@@ -48,17 +42,6 @@ public class UIManager : MonoBehaviour
     private Image option = null;
     [SerializeField]
     private GameObject textPool = null;
-
-    private float t = 0f;
-
-    private bool goldckb2 = false;
-    private bool goldckb = false;
-    private bool timestart = true;
-
-    private int Fever = 1;
-    private int Count = 0;
-
-    private RectTransform rect = null;
 
     private List<UpgradePanel> upgradePanelList = new List<UpgradePanel>();
 
