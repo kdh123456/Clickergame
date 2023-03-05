@@ -11,25 +11,9 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private GameObject updatesoon = null;
     [SerializeField]
-    private Image goldbar = null;
-    [SerializeField]
-    private Text energyText = null;
-    [SerializeField]
-    private Text goldText = null;
-    [SerializeField]
-    private Animator shakeranimator = null;
-    [SerializeField]
-    private Animator gshakeranimator = null;
-    [SerializeField]
     private UpgradePanel upgradePanelTemplate = null;
     [SerializeField]
     private GachaData gachadata = null;
-    [SerializeField]
-    private Image gskimage = null;
-    [SerializeField]
-    private Image feverimage = null;
-    [SerializeField]
-    private Button downbutton = null;
     [SerializeField]
     private GameObject cocktailbutton = null;
     [SerializeField]
@@ -49,7 +33,7 @@ public class UIManager : MonoBehaviour
 
     public void Awake()
     {
-        CreatePanels();
+        //CreatePanels();
     }
     private int a;
     public void Update()

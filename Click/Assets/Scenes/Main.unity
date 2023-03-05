@@ -2425,7 +2425,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.2, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4893,7 +4893,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &905406494
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9622,16 +9622,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dd587100fa9c264d9532aaa7676def2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  help: {fileID: 1922262867}
   Startsceen: {fileID: 1592421693}
   updatesoon: {fileID: 166473677}
-  goldbar: {fileID: 1554846729}
-  energyText: {fileID: 30125476}
-  goldText: {fileID: 1112127181}
-  shakeranimator: {fileID: 856930312}
-  gshakeranimator: {fileID: 1059498281}
   upgradePanelTemplate: {fileID: 1005460660}
-  energyTextTemplate: {fileID: 0}
   gachadata:
     name: 
     rankingname: 
@@ -9639,11 +9632,7 @@ MonoBehaviour:
     weight: 0
     index: 0
     amount: 0
-  gskimage: {fileID: 856930310}
-  feverimage: {fileID: 1059498282}
-  downbutton: {fileID: 0}
   cocktailbutton: {fileID: 1941225100}
-  drawbutton: {fileID: 850046758}
   illustratedbookbutton: {fileID: 2058678122}
   goldscreen: {fileID: 1461588385}
   moneyscreen: {fileID: 4873223}
@@ -10770,8 +10759,8 @@ RectTransform:
   m_Father: {fileID: 403934073}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.2, y: 0}
+  m_AnchorMax: {x: 0.2, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -11115,8 +11104,8 @@ RectTransform:
   m_Father: {fileID: 1239707861}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -11662,7 +11651,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
