@@ -38,7 +38,7 @@ public class UIManager : MonoBehaviour
     private int a;
     public void Update()
     {
-        a = GameManager.Instance.CurrentUser.boxcount % 100;
+        a = GameManager.Instance.UserData.boxcount % 100;
     }
 
 
@@ -46,7 +46,7 @@ public class UIManager : MonoBehaviour
     {
         GameObject panel = null;
         UpgradePanel panelComponent = null;
-        foreach (var tree in GameManager.Instance.CurrentUser.treeList)
+        foreach (var tree in GameManager.Instance.CockTail.cockList)
         {
             panel = Instantiate(upgradePanelTemplate.gameObject, upgradePanelTemplate.transform.parent);
             panelComponent = panel.GetComponent<UpgradePanel>();

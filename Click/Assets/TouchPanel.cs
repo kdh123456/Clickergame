@@ -10,8 +10,8 @@ public class TouchPanel : MonoBehaviour
 	public int beckerIndex;
 	public void PlusGold()
 	{
-		GameManager.Instance.CurrentUser.energy += 1;
-		GameManager.Instance.CurrentUser.boxcount++;
+		GameManager.Instance.UserData.energy += 1;
+		GameManager.Instance.UserData.boxcount++;
 		SoundManager.Instance.SetEffectSoundClip(0);
 		_shakerAnimator[beckerIndex].Play("sk");
 

@@ -33,17 +33,17 @@ public class UpgradePanel : MonoBehaviour
         treeimage.sprite = treeSprite[cockTail.imageNumber];
         treeNameText.text = cockTail.name;
         priceText.text = string.Format("¿ø°¡ {0}", cockTail.price);
-        amountText.text = string.Format("¼÷·Ãµµ {0}", GameManager.Instance.CurrentUser.treeList[cockTail.imageNumber].amount);
+        amountText.text = string.Format("¼÷·Ãµµ {0}", GameManager.Instance.CockTail.cockList[cockTail.imageNumber].amount);
     }
 
     public void OnClickPurchase()
     {
-        if (GameManager.Instance.CurrentUser.energy < cockTail.price)
+        if (GameManager.Instance.UserData.energy < cockTail.price)
         {
             return;
         }
-        GameManager.Instance.CurrentUser.energy -= cockTail.price;
-        GameManager.Instance.CurrentUser.treeList[cockTail.imageNumber].amount++;
+        GameManager.Instance.UserData.energy -= cockTail.price;
+        GameManager.Instance.CockTail.cockList[cockTail.imageNumber].amount++;
         cockTail.price = (long)(cockTail.price * 1.25f);
         UpdateUI();
     }

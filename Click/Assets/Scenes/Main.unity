@@ -9603,6 +9603,7 @@ GameObject:
   - component: {fileID: 1754137341}
   - component: {fileID: 1754137339}
   - component: {fileID: 1754137340}
+  - component: {fileID: 1754137342}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -9650,57 +9651,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbaab28fb58acb04eb5be80b0ff95eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  user:
-    energy: 0
-    gold: 0
-    boxcount: 0
-    treeList:
-    - name: "\uBAA8\uD788\uB610"
-      imageNumber: 0
-      amount: 0
-      price: 150
-      ePs: 1
-    - name: "\uC9C4\uD1A0\uB2C9"
-      imageNumber: 1
-      amount: 0
-      price: 300
-      ePs: 10
-    - name: "\uCF54\uB85C\uB098\uB9AC\uD0C0"
-      imageNumber: 2
-      amount: 0
-      price: 500
-      ePs: 10
-    - name: "\uBAA8\uC2A4\uD06C \uBBAC"
-      imageNumber: 3
-      amount: 0
-      price: 550
-      ePs: 10
-    - name: "\uBCA8\uB9AC\uB2C8"
-      imageNumber: 4
-      amount: 0
-      price: 600
-      ePs: 10
-    - name: "\uB9C8\uAC00\uB9AC\uD0C0"
-      imageNumber: 5
-      amount: 0
-      price: 700
-      ePs: 10
-    - name: "\uBA58\uD574\uD2BC"
-      imageNumber: 6
-      amount: 0
-      price: 800
-      ePs: 10
-    - name: "\uADF8\uB798\uC2A4\uD638\uD37C"
-      imageNumber: 7
-      amount: 0
-      price: 810
-      ePs: 10
-    - name: "\uC11C\uD37C\uB9C1 \uBC14\uC2A4\uD0C0\uB4DC"
-      imageNumber: 8
-      amount: 0
-      price: 1000
-      ePs: 10
-    gachaList: []
   textPool: {fileID: 1666591013}
 --- !u!4 &1754137341
 Transform:
@@ -9716,6 +9666,76 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1754137342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754137338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfe2b1883b83dff47b999dfe1b123a99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  user:
+    energy: 0
+    gold: 0
+    boxcount: 0
+  cockTail:
+    cockList:
+    - name: 
+      imageNumber: 0
+      amount: 0
+      price: 0
+      ePs: 0
+    - name: 
+      imageNumber: 0
+      amount: 0
+      price: 0
+      ePs: 0
+    - name: 
+      imageNumber: 0
+      amount: 0
+      price: 0
+      ePs: 0
+    - name: 
+      imageNumber: 0
+      amount: 0
+      price: 0
+      ePs: 0
+    - name: 
+      imageNumber: 0
+      amount: 0
+      price: 0
+      ePs: 0
+    - name: 
+      imageNumber: 0
+      amount: 0
+      price: 0
+      ePs: 0
+    - name: 
+      imageNumber: 0
+      amount: 0
+      price: 0
+      ePs: 0
+    - name: 
+      imageNumber: 0
+      amount: 0
+      price: 0
+      ePs: 0
+    - name: 
+      imageNumber: 0
+      amount: 0
+      price: 0
+      ePs: 0
+    - name: 
+      imageNumber: 0
+      amount: 0
+      price: 0
+      ePs: 0
+  invenData:
+    gachaList: []
 --- !u!1 &1758123164
 GameObject:
   m_ObjectHideFlags: 0

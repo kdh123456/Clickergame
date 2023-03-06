@@ -11,10 +11,10 @@ public class MoneyPanel : MonoBehaviour
     private Text _goldText;
     public void UpdateEnergyPanel()
     {
-        _moneyText.text = string.Format("{0} 원", GameManager.Instance.CurrentUser.energy);
+        _moneyText.text = string.Format("{0} 원", GameManager.Instance.UserData.energy);
     }
     public void UpdateGoldPanel()
     {
-        _goldText.text = string.Format("{0} 개", GameManager.Instance.CurrentUser.gold);
+        _goldText.text = string.Format("{0} 개", GameManager.Instance.UserData.gold);
     }
 }

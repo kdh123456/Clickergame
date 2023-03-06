@@ -31,12 +31,12 @@ public class RandomSelect : MonoSingleton<RandomSelect>
 
     public void ResultSelect(int i)
     {
-        GameManager.Instance.CurrentUser.gold -= 10;
+        GameManager.Instance.UserData.gold -= 10;
 
         //result.Add(desk[RandomGacha().index]);
         GachaData gachaData;
         gachaData = RandomGacha();
-        GameManager.Instance.CurrentUser.gachaList.Add(gachaData);
+        GameManager.Instance.InvenData.gachaList.Add(gachaData);
         GachaUI gachaUI = Instantiate(cardprefab, parent).GetComponent<GachaUI>();
         gachaUI.GachaUISet(gachaData);
     }
@@ -70,27 +70,27 @@ public class RandomSelect : MonoSingleton<RandomSelect>
     }
     private void Gachack()
     {
-        if (Gachaprice <= GameManager.Instance.CurrentUser.gold)
+        if (Gachaprice <= GameManager.Instance.UserData.gold)
         {
             Gachabutton.enabled = true;
-            if (GameManager.Instance.CurrentUser.gold >= Gachaprice * 10)
+            if (GameManager.Instance.UserData.gold >= Gachaprice * 10)
             {
                 Gachabutton10.enabled = true;
             }
-            else if (GameManager.Instance.CurrentUser.gold < Gachaprice * 10)
+            else if (GameManager.Instance.UserData.gold < Gachaprice * 10)
             {
                 Gachabutton10.enabled = false;
             }
-            if (GameManager.Instance.CurrentUser.gold >= Gachaprice * 100)
+            if (GameManager.Instance.UserData.gold >= Gachaprice * 100)
             {
                 Gachabutton100.enabled = true;
             }
-            else if (GameManager.Instance.CurrentUser.gold < Gachaprice * 100)
+            else if (GameManager.Instance.UserData.gold < Gachaprice * 100)
             {
                 Gachabutton100.enabled = false;
             }
         }
-        else if (Gachaprice > GameManager.Instance.CurrentUser.gold)
+        else if (Gachaprice > GameManager.Instance.UserData.gold)
         {
             Gachabutton.enabled = false;
         }
@@ -132,13 +132,13 @@ public class RandomSelect : MonoSingleton<RandomSelect>
     }
     public void Gachaamountck()
     {
-        foreach (var gc in GameManager.Instance.CurrentUser.gachaList)
+        foreach (var gc in GameManager.Instance.InvenData.gachaList)
         {
             if (gc.index == 0)
             {
                 if (gc.amount > 0)
                 {
-                    GameManager.Instance.CurrentUser.treeList[0].ePs = GameManager.Instance.CurrentUser.treeList[0].ePs + 10;
+                    GameManager.Instance.CockTail.cockList[0].ePs = GameManager.Instance.CockTail.cockList[0].ePs + 10;
                     gc.amount = 0;
                 }
             }
@@ -146,7 +146,7 @@ public class RandomSelect : MonoSingleton<RandomSelect>
             {
                 if (gc.amount > 0)
                 {
-                    GameManager.Instance.CurrentUser.treeList[0].ePs = GameManager.Instance.CurrentUser.treeList[0].ePs + 20;
+                    GameManager.Instance.CockTail.cockList[0].ePs = GameManager.Instance.CockTail.cockList[0].ePs + 20;
                     gc.amount = 0;
                 }
             }
@@ -154,7 +154,7 @@ public class RandomSelect : MonoSingleton<RandomSelect>
             {
                 if (gc.amount > 0)
                 {
-                    GameManager.Instance.CurrentUser.treeList[0].ePs = GameManager.Instance.CurrentUser.treeList[0].ePs + 30;
+                    GameManager.Instance.CockTail.cockList[0].ePs = GameManager.Instance.CockTail.cockList[0].ePs + 30;
                     gc.amount = 0;
                 }
             }
