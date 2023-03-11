@@ -17,14 +17,9 @@
   
   Made by 만만 게임즈
   
-  <b>유튜브 영상/b>
+  <b>유튜브 영상</b>
    - https://youtu.be/GNlec7o6iUE
    
    <b>다운로드</b>
    - https://drive.google.com/file/d/1gD04665yJ-vdwSET_NpxABxHfe3XUkoa/view?usp=sharing
-   
-   
-   <br>
-   
-   [![Video Label](https://user-images.githubusercontent.com/81199996/177677532-4c5f557f-e484-479a-837e-8f4a58b76fc2.png)](https://www.youtube.com/watch?v=XYj1v_vGxR0)
- 
+  
