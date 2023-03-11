@@ -6,7 +6,7 @@
 
 더 많이 팔아 <b>골드</b>를 얻어 재료를 뽑으세요
 
-[![Video Label](http://img.youtube.com/vi/GNlec7o6iUE.jpg)](https://youtu.be/GNlec7o6iUE?t=0s)
+[![Video Label](http://img.youtube.com/vi/GNlec7o6iUE/0.jpg)](https://youtu.be/GNlec7o6iUE?t=0s)
 
 ## 간단한 설명
   ### 1. 비커를 눌러 돈을 버세요!
