@@ -10,7 +10,7 @@
 <br>
 <br>
   **비커를 눌러 돈을 버세요!!**
-![gif](https://user-images.githubusercontent.com/77655325/203090019-059afa15-f8d3-4abc-b34e-6221c7657692.png)
+![(포)바텐더 쉐이크](https://user-images.githubusercontent.com/77655332/224470579-fadac777-e6e5-4d86-8630-20bd30a29faf.gif)
   
   - 점프 : SPACE
   - 아이템 먹기 : F
