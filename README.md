@@ -4,9 +4,7 @@
 
 다양한 <b>칵테일</b>의 <b>숙련도</b>를 늘려 <b>자동화</b>를 사용하세요!
 
-수많은 능력을 사용하여 당신의 앞을 가로막는 <b>장애물</b>을 뛰어넘으세요!
-
-당신은 어디까지 올라갈 수 있을까요?
+더 많이 팔아 <b>골드</b>를 얻어 재료를 뽑으세요
 
 <b>조작 방법</b> :
   - 좌우이동 : AD
@@ -19,11 +17,8 @@
   
   Made by 만만 게임즈
   
-  <b>만만게임즈 유튜브</b>
+  <b>유튜브 영상/b>
    - https://youtu.be/GNlec7o6iUE
-   
-   <b>만만게임즈 페이스북</b>
-   - https://www.facebook.com/manmangames
    
    <b>다운로드</b>
    - https://drive.google.com/file/d/1gD04665yJ-vdwSET_NpxABxHfe3XUkoa/view?usp=sharing
@@ -32,46 +27,4 @@
    <br>
    
    [![Video Label](https://user-images.githubusercontent.com/81199996/177677532-4c5f557f-e484-479a-837e-8f4a58b76fc2.png)](https://www.youtube.com/watch?v=XYj1v_vGxR0)
-   
-  
-  
-  
-  <br>
-  <br>
-  <br>
-  <br>
-  
-Run up the well!
-
-Use your abilities by eating various <b>items</b>!
-
-Use your numerous abilities to jump over <b>obstacles</b> in your way!
-
-How far can you go up?
-
-<b>Operation method</b>:
-
-  - Left and right movement: AD<br>
-  - Jump: SPACE<br>
-  - Eat Item: F<br>
-  - Using Ability: E<br>
-  - Pause: ESC<br>
-
-※ <b>CAUTION!</b> DO NOT AUTOMATIC SAVE
-
-Made by ManManGames
-  
-  <b>ManManGames Youtube</b>
-   - https://www.youtube.com/channel/UC__bvUUBatVlj4bndzYXdSw
-   
-   <b>ManManGames FaceBook</b>
-   - https://www.facebook.com/manmangames
-   
-   <b>Download</b>
-   - https://drive.google.com/file/d/1gD04665yJ-vdwSET_NpxABxHfe3XUkoa/view?usp=sharing
-   
-   
-   <br>
-   
-   [![Video Label](https://user-images.githubusercontent.com/81199996/177677532-4c5f557f-e484-479a-837e-8f4a58b76fc2.png)](https://www.youtube.com/watch?v=XYj1v_vGxR0)
-
+ 
