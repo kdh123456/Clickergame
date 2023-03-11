@@ -11,13 +11,10 @@
 
 ![(포)바텐더 쉐이크](https://user-images.githubusercontent.com/77655332/224470579-fadac777-e6e5-4d86-8630-20bd30a29faf.gif)
   
-  - 점프 : SPACE
-  - 아이템 먹기 : F
-  - 능력 사용하기 : E
-  - 일시 정지 : ESC
+  ### 2. 업그레이드를 시켜 자동화를 하세요!
   
-  <b>유튜브 영상</b>
-   - https://youtu.be/GNlec7o6iUE
+  
+ ![(포)바텐더 업그레이드](https://user-images.githubusercontent.com/77655332/224470756-997d26ca-2307-4072-89cd-0789db267dc0.gif)
    
    <b>다운로드</b>
    - https://drive.google.com/file/d/1gD04665yJ-vdwSET_NpxABxHfe3XUkoa/view?usp=sharing
