@@ -6,10 +6,11 @@
 
 더 많이 팔아 <b>골드</b>를 얻어 재료를 뽑으세요
 
-***간단한 설명***
+**간단한 설명**
+<br>
 <br>
   **비커를 눌러 돈을 버세요!!**
-  ![(포)바텐더 쉐이크.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5590bd53-89bc-47a0-9c07-e27353105b3d/(%ED%8F%AC)%EB%B0%94%ED%85%90%EB%8D%94_%EC%89%90%EC%9D%B4%ED%81%AC.gif)
+![gif](https://user-images.githubusercontent.com/77655325/203090019-059afa15-f8d3-4abc-b34e-6221c7657692.png)
   
   - 점프 : SPACE
   - 아이템 먹기 : F
