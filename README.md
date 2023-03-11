@@ -10,7 +10,7 @@
 <br>
 <br>
   **비커를 눌러 돈을 버세요!!**
- <br>
+
 ![(포)바텐더 쉐이크](https://user-images.githubusercontent.com/77655332/224470579-fadac777-e6e5-4d86-8630-20bd30a29faf.gif)
   
   - 점프 : SPACE
