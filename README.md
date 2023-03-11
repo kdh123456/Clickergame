@@ -6,6 +6,8 @@
 
 더 많이 팔아 <b>골드</b>를 얻어 재료를 뽑으세요
 
+[![Video Label](http://img.youtube.com/vi/GNlec7o6iUE.jpg)](https://youtu.be/GNlec7o6iUE?t=0s)
+
 ## 간단한 설명
   ### 1. 비커를 눌러 돈을 버세요!
 
@@ -20,6 +22,7 @@
    
    ![(포)바텐더 가챠](https://user-images.githubusercontent.com/77655332/224470770-952abb25-db32-4d65-bc12-eb734997f12a.gif)
    
+
    <b>다운로드</b>
    - https://drive.google.com/file/d/1gD04665yJ-vdwSET_NpxABxHfe3XUkoa/view?usp=sharing
   
