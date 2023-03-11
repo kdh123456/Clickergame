@@ -7,6 +7,7 @@
 더 많이 팔아 <b>골드</b>를 얻어 재료를 뽑으세요
 
 <b>간단한 설명</b>
+<br>
   **비커를 눌러 돈을 버세요!!**
   ![(포)바텐더 쉐이크.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5590bd53-89bc-47a0-9c07-e27353105b3d/(%ED%8F%AC)%EB%B0%94%ED%85%90%EB%8D%94_%EC%89%90%EC%9D%B4%ED%81%AC.gif)
   
