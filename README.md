@@ -6,6 +6,8 @@
 
 더 많이 팔아 <b>골드</b>를 얻어 재료를 뽑으세요
 
+###플레이 영상
+
 [![Video Label](http://img.youtube.com/vi/SzxHBgcquVw/0.jpg)](https://youtu.be/SzxHBgcquVw?t=0s)
 
 ## 간단한 설명
